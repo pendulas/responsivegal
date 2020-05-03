@@ -1,0 +1,82 @@
+body {
+   margin: 0;
+   font-family: 'Times New Roman', Times, serif;
+   box-sizing: border-box;
+   color: rgb(51, 53, 56);
+}
+
+
+#wrapper {
+   width: 90%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 1em;
+}
+
+
+#grid {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 4rem 1rem;
+}
+
+
+figure {
+   width: 220px;
+   margin: 0;
+   background-color: gray;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+
+figcaption {
+   background: rgba(184, 155, 155, 155);
+   border-radius: 0 0 10px 10px;
+   padding: 0.5em;
+   text-align: center;
+   }
+   .paragraph {
+      width: 100%;
+      margin-top: 5em;
+      font-style: italic;
+   }
+ 
+ 
+   
+   img {
+      vertical-align: bottom;
+      width: 100%;
+   }
+  
+   /*media*/
+   
+   @media screen and (max-width: 1260px) {
+      #grid {
+          grid-template-columns: repeat(4, 1fr)
+      }
+  }
+  
+  
+  
+  @media screen and (max-width: 1024px) {
+      #grid {
+          grid-template-columns: repeat(3, 1fr)
+      }
+  }
+  
+  
+  
+  @media screen and (max-width: 750px) {
+      #grid {
+          grid-template-columns: repeat(2, 1fr)
+      }
+  }
+  
+  
+  
+  @media screen and (max-width: 520px) {
+      #grid {
+          grid-template-columns: repeat(1, 1fr)
+      }
+  }
